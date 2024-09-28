@@ -28,6 +28,7 @@ For flash the board you have 2 options: my web installer (easy way) or with the 
 or<br>
 2- Flash download tool is in the repository (see directory) with the 3 needed .bin files
 <br>
+use 115200 baud if got problem during programming<br>
 ![2024-09-28_191425](https://github.com/user-attachments/assets/8d382d5e-aa72-44b3-b271-4afb7c571abd)
 
 
