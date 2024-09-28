@@ -26,7 +26,7 @@ I only modified 2 files
 
 
 
-
+<hr>
 Original project https://github.com/valerio-vaccaro/HAN
 
 ![image](images/bgNerdMinerV2.png)
