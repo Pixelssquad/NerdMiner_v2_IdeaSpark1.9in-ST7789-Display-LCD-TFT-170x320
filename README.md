@@ -20,6 +20,8 @@ I only modified 2 files
 - platformio.io in main directory
 - tDisplayV1Driver.cpp in \src\drivers\displays
 
+
+### Flasing the ESP32 board
 For flash the board you have 2 options: my web installer (easy way) or with the flash download tool (easy too but requires more time, only windows)
 
 1 - Web installer here (easy and fast way): https://pixelssquad.github.io/nerdminerideaspark/
