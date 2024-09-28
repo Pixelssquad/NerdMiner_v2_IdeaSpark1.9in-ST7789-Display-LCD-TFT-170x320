@@ -6,6 +6,13 @@ This is a **free and open source project** that let you try to reach a bitcoin b
 
 The main aim of this project is to let you **learn more about minery** and to have a beautiful piece of hardware in your desktop.
 
+![diegooz_social](https://github.com/user-attachments/assets/96618854-a146-4b2c-9f9d-ed8518104a6b)
+**This is a modified version for work with a Ideaspark board (very cheap on Aliexpress)**
+
+
+
+
+
 Original project https://github.com/valerio-vaccaro/HAN
 
 ![image](images/bgNerdMinerV2.png)
