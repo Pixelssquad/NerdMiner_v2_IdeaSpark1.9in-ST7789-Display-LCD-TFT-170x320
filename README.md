@@ -13,7 +13,7 @@ The main aim of this project is to let you **learn more about minery** and to ha
 ![nerdminer_ideaspark](https://github.com/user-attachments/assets/7ce5e595-ea75-4004-9423-8e26fac398d6)
 
 The onboard lcd is a 320x170 px 1.9inch ST7789
-## Very cheap on Aliexpress, But here ----> https://s.click.aliexpress.com/e/_DdrhBOZ
+## Very cheap on Aliexpress, Buy here ----> https://s.click.aliexpress.com/e/_DdrhBOZ
 <br>
 
 I only modified 2 files
