@@ -1,4 +1,4 @@
-# NerdSoloMiner
+# NerdSoloMiner for IdeaSpark ESP32 Board
 
 **The NerdSoloMiner v2**
 
