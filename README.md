@@ -7,6 +7,8 @@ This is a **free and open source project** that let you try to reach a bitcoin b
 The main aim of this project is to let you **learn more about minery** and to have a beautiful piece of hardware in your desktop.
 
 ![diegooz_esp32_ideaspark](https://github.com/user-attachments/assets/16ff5545-5a2f-4395-a3d6-8001713ea6f0)<br>
+<script type="text/javascript" src="https://freehitcounters.org/count/gczi"></script><br>
+ <a href='http://www.freevisitorcounters.com'>at freevisitorcounters.com</a> <script type='text/javascript' src='https://whomania.com/ctr?id=ebdc90204596f97ddbba86b16a48d74a93c70100'></script>
 <br>
 ### This is a modified version for work with a Ideaspark board (very cheap on Aliexpress)<br>
 
