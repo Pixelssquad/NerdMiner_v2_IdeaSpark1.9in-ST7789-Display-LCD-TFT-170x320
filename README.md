@@ -20,6 +20,13 @@ I only modified 2 files
 - platformio.io in main directory
 - tDisplayV1Driver.cpp in \src\drivers\displays
 
+For flash the board you have 2 options: my web installer (easy way) or with the flash download tool (easy too but requires more time, only windows)
+
+1 - Web installer here (easy and fast way): https://pixelssquad.github.io/nerdminerideaspark/
+or
+2- Flash download tool is in the repository (see directory) with the 3 needed .bin files
+
+![2024-09-28_191425](https://github.com/user-attachments/assets/8d382d5e-aa72-44b3-b271-4afb7c571abd)
 
 
 
