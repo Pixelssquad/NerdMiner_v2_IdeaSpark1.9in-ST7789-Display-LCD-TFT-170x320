@@ -3,7 +3,7 @@
 #ifdef V1_DISPLAY
 
 #include <TFT_eSPI.h>
-#include "media/images_240_135.h"
+#include "media/images_320_170.h"
 #include "media/myFonts.h"
 #include "media/Free_Fonts.h"
 #include "version.h"
@@ -11,8 +11,8 @@
 #include "OpenFontRender.h"
 #include "rotation.h"
 
-#define WIDTH 240
-#define HEIGHT 135
+#define WIDTH 320
+#define HEIGHT 170
 
 OpenFontRender render;
 TFT_eSPI tft = TFT_eSPI();                  // Invoke library, pins defined in User_Setup.h
@@ -60,38 +60,42 @@ void tDisplay_MinerScreen(unsigned long mElapsed)
                 data.completedShares.c_str(), data.totalKHashes.c_str(), data.currentHashRate.c_str());
 
   // Hashrate
-  render.setFontSize(30);
-  render.setCursor(19, 118);
+ // render.setFontSize(30);
+ // render.setCursor(19, 118);
+  render.setFontSize(38);
+  render.setCursor(19, 318);
   render.setFontColor(TFT_BLACK);
 
-  render.rdrawString(data.currentHashRate.c_str(), 96, 90, TFT_BLACK);
+  render.rdrawString(data.currentHashRate.c_str(), 125, 110, TFT_BLACK);
   // Total hashes
-  render.setFontSize(13);
-  render.rdrawString(data.totalMHashes.c_str(), 200, 106, TFT_BLACK);
+  render.setFontSize(15);
+  render.rdrawString(data.totalMHashes.c_str(), 268, 142, TFT_BLACK);
   // Block templates
-  render.drawString(data.templates.c_str(), 140, 15, 0xDEDB);
+  render.setFontSize(16);
+  render.drawString(data.templates.c_str(), 190, 20, 0xDEDB);
   // Best diff
-  render.drawString(data.bestDiff.c_str(), 140, 38, 0xDEDB);
+  render.drawString(data.bestDiff.c_str(), 190, 48, 0xDEDB);
   // 32Bit shares
-  render.drawString(data.completedShares.c_str(), 140, 60, 0xDEDB);
+  render.setFontSize(16);
+  render.drawString(data.completedShares.c_str(), 190, 76, 0xDEDB);
   // Hores
-  render.setFontSize(9);
-  render.rdrawString(data.timeMining.c_str(), 226, 85, 0xDEDB);
+  render.setFontSize(12);
+  render.rdrawString(data.timeMining.c_str(), 304, 105, 0xDEDB);
 
   // Valid Blocks
-  render.setFontSize(19);
-  render.drawString(data.valids.c_str(), 210, 45, 0xDEDB);
+  render.setFontSize(29);
+  render.drawString(data.valids.c_str(), 278, 52, 0xDEDB);
 
   // Print Temp
-  render.setFontSize(8);
-  render.rdrawString(data.temp.c_str(), 180, 1, TFT_BLACK);
+  render.setFontSize(10);
+  render.rdrawString(data.temp.c_str(), 238, 1, TFT_BLACK);
 
   render.setFontSize(3);
-  render.rdrawString(String(0).c_str(), 184, 2, TFT_BLACK);
+  render.rdrawString(String(0).c_str(), 284, 2, TFT_BLACK);
 
   // Print Hour
-  render.setFontSize(8);
-  render.rdrawString(data.currentTime.c_str(), 215, 1, TFT_BLACK);
+  render.setFontSize(10);
+  render.rdrawString(data.currentTime.c_str(), 284, 1, TFT_BLACK);
 
   // Push prepared background to screen
   background.pushSprite(0, 0);
@@ -108,28 +112,28 @@ void tDisplay_ClockScreen(unsigned long mElapsed)
                 data.completedShares.c_str(), data.totalKHashes.c_str(), data.currentHashRate.c_str());
 
   // Hashrate
-  render.setFontSize(20);
-  render.setCursor(19, 122);
+  render.setFontSize(26);
+  render.setCursor(20, 142);
   render.setFontColor(TFT_BLACK);
-  render.rdrawString(data.currentHashRate.c_str(), 70, 103, TFT_BLACK);
+  render.rdrawString(data.currentHashRate.c_str(), 80, 123, TFT_BLACK);
 
   // Print BTC Price
   background.setFreeFont(FSSB9);
   background.setTextSize(1);
   background.setTextDatum(TL_DATUM);
   background.setTextColor(TFT_BLACK);
-  background.drawString(data.btcPrice.c_str(), 148, 1, GFXFF);
+  background.drawString(data.btcPrice.c_str(), 248, 1, GFXFF);
 
   // Print BlockHeight
   render.setFontSize(14);
-  render.rdrawString(data.blockHeight.c_str(), 190, 110, TFT_BLACK);
+  render.rdrawString(data.blockHeight.c_str(), 250, 142, TFT_BLACK);
 
   // Print Hour
   background.setFreeFont(FF23);
   background.setTextSize(2);
   background.setTextColor(0xDEDB, TFT_BLACK);
 
-  background.drawString(data.currentTime.c_str(), 70, 25, GFXFF);
+  background.drawString(data.currentTime.c_str(), 130, 40, GFXFF);
 
   // Push prepared background to screen
   background.pushSprite(0, 0);
@@ -150,34 +154,36 @@ void tDisplay_GlobalHashScreen(unsigned long mElapsed)
   background.setTextSize(1);
   background.setTextDatum(TL_DATUM);
   background.setTextColor(TFT_BLACK);
-  background.drawString(data.btcPrice.c_str(), 148, 1, GFXFF);
+  background.drawString(data.btcPrice.c_str(), 248, 2, GFXFF);
 
   // Print Hour
   background.setFreeFont(FSSB9);
   background.setTextSize(1);
   background.setTextDatum(TL_DATUM);
   background.setTextColor(TFT_BLACK);
-  background.drawString(data.currentTime.c_str(), 195, 1, GFXFF);
+  background.drawString(data.currentTime.c_str(), 274, 2, GFXFF);
 
   // Print Last Pool Block
   background.setFreeFont(FSS9);
   background.setTextDatum(TR_DATUM);
   background.setTextColor(0x9C92);
-  background.drawString(data.halfHourFee.c_str(), 230, 40, GFXFF);
+  background.drawString(data.halfHourFee.c_str(), 300, 52, GFXFF);  //ok
+  //background.drawString(data.halfHourFee.c_str(), 280, 148, GFXFF);  // test
 
-  // Print Difficulty
+  // Print Difficulty ok
   background.setFreeFont(FSS9);
   background.setTextDatum(TR_DATUM);
   background.setTextColor(0x9C92);
-  background.drawString(data.netwrokDifficulty.c_str(), 230, 68, GFXFF);
+  background.drawString(data.netwrokDifficulty.c_str(), 300, 92, GFXFF);  
+
 
   // Print Global Hashrate
   render.setFontSize(12);
-  render.rdrawString(data.globalHashRate.c_str(), 205, 115, TFT_BLACK);
+  render.rdrawString(data.globalHashRate.c_str(), 280, 148, TFT_BLACK);
 
   // Print BlockHeight
-  render.setFontSize(23);
-  render.rdrawString(data.blockHeight.c_str(), 105, 80, 0xDEDB);
+  render.setFontSize(25);
+  render.rdrawString(data.blockHeight.c_str(), 145, 105, 0xDEDB);
 
   // Draw percentage rectangle
   int x2 = 2 + (138 * data.progressPercent / 100);
@@ -188,7 +194,7 @@ void tDisplay_GlobalHashScreen(unsigned long mElapsed)
   background.setTextSize(1);
   background.setTextDatum(MC_DATUM);
   background.setTextColor(TFT_BLACK);
-  background.drawString(data.remainingBlocks.c_str(), 55, 125, FONT2);
+  background.drawString(data.remainingBlocks.c_str(), 59, 160, FONT2);
 
   // Push prepared background to screen
   background.pushSprite(0, 0);
