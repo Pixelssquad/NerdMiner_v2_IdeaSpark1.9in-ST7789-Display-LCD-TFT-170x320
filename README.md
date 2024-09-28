@@ -1,5 +1,5 @@
 # NerdSoloMiner for IdeaSpark ESP32 Board
-
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FPixelssquad%2FNerdMiner_v2_IdeaSpark1.9in-ST7789-Display-LCD-TFT-170x320&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 **The NerdSoloMiner v2**
 
 This is a **free and open source project** that let you try to reach a bitcoin block with a small piece of hardware.
@@ -7,7 +7,7 @@ This is a **free and open source project** that let you try to reach a bitcoin b
 The main aim of this project is to let you **learn more about minery** and to have a beautiful piece of hardware in your desktop.
 
 ![diegooz_esp32_ideaspark](https://github.com/user-attachments/assets/16ff5545-5a2f-4395-a3d6-8001713ea6f0)<br>
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FPixelssquad%2FNerdMiner_v2_IdeaSpark1.9in-ST7789-Display-LCD-TFT-170x320&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+
 <br>
 ### This is a modified version for work with a Ideaspark board (very cheap on Aliexpress)<br>
 
