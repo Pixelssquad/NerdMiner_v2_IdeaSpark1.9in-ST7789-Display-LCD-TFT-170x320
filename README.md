@@ -16,7 +16,7 @@ The onboard lcd is a 320x170 px 1.9inch ST7789
 ## Very cheap on Aliexpress, Buy here ----> https://s.click.aliexpress.com/e/_DdrhBOZ
 <br>
 
-I only modified 2 files
+I only modified 2 files, you can use those files on never version if you want to compile yourself
 - platformio.io in main directory
 - tDisplayV1Driver.cpp in \src\drivers\displays
 
